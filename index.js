@@ -89,6 +89,7 @@ app.post("/submissions", function(req, res) {
     submission.accepted = Math.random() < 0.5;
     submission.answer = req.answer;
     SUBMISSIONS.push(submission);
+    res.sendStatus(200);
 });
 
 // leaving as hard todos
